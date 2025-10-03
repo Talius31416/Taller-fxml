@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="co.edu.uniquindio.fx10.controlador.DashboardController">
+
+    <top>
+        <HBox spacing="10" alignment="CENTER">
+            <children>
+                <Button fx:id="btnListado" text="Listado de Productos" onAction="#abrirListadoProducto"/>
+                <Button fx:id="btnFormulario" text="Formulario Producto" onAction="#abrirFormularioProducto"/>
+                <Button fx:id="btnVolverDashboardTop" text="Volver al Dashboard" onAction="#volverAlDashboard" visible="false" managed="false"/>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <AnchorPane fx:id="contenedorCentral"/>
+    </center>
+
+</BorderPane>
